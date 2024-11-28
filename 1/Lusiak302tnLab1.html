@@ -1,0 +1,50 @@
+<HTML>
+ <HEAD>
+  <TITLE> 
+    Лабораторна робота 1 
+  </TITLE>
+ </HEAD>
+ <BODY BGCOLOR="#DDD0C8">
+<FONT color="#323232" SIZE=4pt>
+ <H1><B>Про себе </B></H1>
+ <p align="justify">
+Я, Лисяк Костянтин Володимирович, - студент третього курсу <i>навчально наукового інституту інформаційних технологій та робототехніки</i> спеціальності <b>122<b/> комп'ютерні технології у <b>Національному університеті "Полтавська політехніка імені Юрія Кондратюка"</b>. Здобув повну <i>середню освіту</i> в Шишацькому науковому ліцеї.
+</p>
+ <H2><B>Програмування</B></H2>
+</BODY>
+<BODY>
+ <p align="justify">
+  <xmp>
+#pragma once
+#include <string.h>
+#include <iostream>
+using namespace std;
+class complex
+{
+	double real;
+	double imagin;
+public:
+	complex() : real(0.0), imagin(0.0) {};
+	complex(double r) : real(r), imagin(5.0) {};
+	complex(const complex& m) : real(m.real), imagin(m.imagin) {};
+	complex operator+(const complex& m); 
+	complex operator-(const complex& m); 
+	complex operator*(const complex& m); 
+	complex operator/(const complex& m); 
+	void init(double r, double i); 
+	void read();
+	void display(); 
+	bool equ(complex m);
+	complex conj(); 
+	string tostr();
+};
+</xmp>
+ </p>
+</BODY>
+<BODY>
+ <p align="right"> <u> <i>
+  Студент групи 302ТН Лисяк К.В.
+ </i> </u> </p>
+</BODY>
+</HTML>
+ 
